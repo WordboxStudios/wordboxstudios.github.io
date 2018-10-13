@@ -2,7 +2,7 @@
     
     /*Fondo pantalla*/
     
-    background:#000;font-size:16px}figure{margin:0}figure img{display:block;width:100%}a{color:#2A394C}.headerLanding{margin:10% 0 5px;position:relative}.headerLanding .logoLanding{width:70%;display:block;margin:5px auto}.headerLanding .navLanding{width:90%;margin:10px auto;text-align:center}.headerLanding .navLanding .btnLanding{position:relative;border:2px solid #dead89;font-size:1.1em;padding:10px 5px;display:inline-block;text-decoration:none;margin:10px;width:49%;max-width:180px;font-weight:300;transition:all .8s}.video{position:relative;padding-top:56.25%;
+    background:#000;font-size:16px}figure{margin:0}figure img{display:block;width:100%}a{color:#2A394C}.headerLanding{margin:10% 0 5px;position:relative}.headerLanding .logoLanding{width:70%;display:block;margin:5px auto}.headerLanding .navLanding{width:90%;margin:10px auto;text-align:center}.headerLanding .navLanding .btnLanding{position:relative;border:2px solid #2A394C;font-size:1.1em;padding:10px 5px;display:inline-block;text-decoration:none;margin:10px;width:49%;max-width:180px;font-weight:300;transition:all .8s}.video{position:relative;padding-top:56.25%;
         
     /*Dimensones Video llamado de acción*/    
         width:100%;margin:0 auto}.video #player{position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%}@media only screen and (min-width:320px) and (min-height:568px){.headerLanding{margin:15% 0 5px}}
