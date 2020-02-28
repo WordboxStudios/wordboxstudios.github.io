@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?rreuh7');
+  src:  url('../fonts/icomoon.eot?rreuh7#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?rreuh7') format('truetype'),
+    url('../fonts/icomoon.woff?rreuh7') format('woff'),
+    url('../fonts/icomoon.svg?rreuh7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+.burger-button{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 50%;
+  border: 1px solid var(--color-AquaHaze);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 15px;
+  top: 15px;
+  color: var(--color-AquaHaze);
+}
+
+
+@media screen and (max-width: 1024px){
+    .field-message{
+      width: 200px;
+    }
+    .field-btn{
+      left: 245%;
+    }
+}
+
+@media screen and (max-width: 940px){
+      .contact-title{
+        font-size: 2em;
+      }
+}
+
+@media screen and (max-width: 767px){
+    .burger-button{
+      display: block;
+      cursor: pointer;
+    }
+    .hero-img{
+      width: 60%;
+    }
+    .menu{
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      background: rgba(0, 0, 0, .9);
+      z-index: 3;
+      top: 0;
+      left: -100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: .3s;
+    }
+    .menu.is-active{
+      left: 0;
+    }
+    .first-services,
+    .second-services,
+    .third-services{
+      display: grid;
+      align-items: center;
+      width: 100%;
+      margin: 10px 0;
+      height: auto;
+    }
+    .avs-services,
+    .business-services,
+    .advisory-services{
+      margin: 5px 0;
+    }
+    .photo,
+    .video,
+    .diseno{
+      font-size: 20px;
+    }
+    .photo-title,
+    .video-title,
+    .diseno-title{
+      font-size: 3em;
+    }
+    .photo-description,
+    .video-description,
+    .diseno-description{
+      font-size: 1em;
+    }
+    .photo-cta,
+    .video-cta,
+    .diseno-cta{
+      font-size: 1em;
+    }
+    .contact{
+      height: auto;
+    }
+    .contact-container{
+      display: block;
+      height: auto;
+      padding: 50px 0px;
+    }
+    .contact-title{
+      text-align: center;
+      padding: 0px 0px 40px 0px;
+    }
+    .contact-info{
+      border: 1px solid var(--color-AquaHaze);
+      border-radius: 20px;
+      margin: 0px 50px;
+      height: auto;
+    }
+    .form-limits{
+      margin: 50px auto 20px auto;
+      position: static;
+      text-align: center;
+    }
+    .block{
+      margin: 0px 10px;
+    }
+    .field{
+      width: 250px;
+      height: 40px;
+    }
+    .field-message{
+      width: 250px;
+    }
+    .block-message-area{
+      position: static;
+    }
+    .block-submit{
+      padding: 20px 0px;
+    }
+    .field-btn{
+      height: 40px;
+      width: 120px;
+      position: static;
+      margin: 0px auto;
+      text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .photo,
+    .video,
+    .diseno{
+      font-size: 18px;
+    }
+    .photo-title,
+    .video-title,
+    .diseno-title{
+      font-size: 3em;
+      padding: 200px 0px 50px 30px;
+    }
+    .photo-description,
+    .video-description,
+    .diseno-description{
+      font-size: 1em;
+      padding: 1em 0em 1em 3em;
+    }
+    .photo-cta,
+    .video-cta,
+    .diseno-cta{
+      font-size: 1em;
+      padding: 1em 0em 1em 3em;
+    }
+    .contact-info{
+      margin: 0px 10px;
+    }
+    .field{
+      width: 90px;
+    }
+    .field-message{
+      width: 150px;
+    }
+  }
+
+@media screen and (max-width: 320px){
+    .contact-info{
+      margin: 0px 10px;
+    }
+    .field{
+      width: 90px;
+    }
+    .field-message{
+      width: 150px;
+    }
+
+}

@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: var(--color-grey);
+}
+.logo{
+  margin-top: 100px;
+  text-align: center;
+}
+.social-media{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media-facebook,
+.social-media-whatsapp,
+.social-media-instagram{
+  padding: 0px 50px;
+}
+.social-media-facebook:hover,
+.social-media-whatsapp:hover,
+.social-media-instagram:hover{
+  transform:matrix(1.10,0.00,0.00,1.10,0,0);
+  transition:transform 0.5s ease 0s;
+}
+.hom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.hom-text{
+  font-family: var(--font-btn);
+  color: var(--color-AquaHaze);
+  text-decoration: underline var(--color-AquaHaze);
+  font-size: 22px;
+}

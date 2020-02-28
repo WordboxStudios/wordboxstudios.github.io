@@ -1,0 +1,19 @@
+/* --- Wordbox Studios, JuanesSabe --- */
+
+:root{
+  /* -- Colores -- */
+  --color-black:            black;
+  --color-white:            white;
+  --color-grey:             #1a1a1a;
+  --color-AquaHaze:         #76daff;
+  --color-AquaHaze_form:    rgba(135, 186, 192, 0.50);
+  --color-yellow:           #ffdd40;
+  --color-yellow_form:      rgba(255, 221, 64, 0.50);
+  --color-green:            #47cf73;
+  --color-green_form:       rgba(71, 207, 115, 0.50);
+  /* -- Fuentes -- */
+  --font-title:             'Poppins', sans-serif;
+  --font-description:       'DM Sans', sans-serif;
+  --font-btn:               'Didact Gothic', sans-serif;
+  --font-transformation:    'Courier Prime', monospace;
+}
