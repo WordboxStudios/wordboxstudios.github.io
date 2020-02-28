@@ -1,40 +1,127 @@
-<!DOCTYPE html> <html lang=es prefix="og: http://ogp.me/ns#">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i|Didact+Gothic|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Press+Start+2P&display=swap&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext|Courier+Prime:400,400i,700,700i&display=swap&subset=latin-ex" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+  <title>Wordbox Studios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  <body>
+      <main>
+        <i class="icon-menu burger-button" id="burger-menu"></i>
+          <section class="services">
+              <div class="hero">
+                  <img class="hero-img" src="images/wordbox-isotipo-white.svg" alt="isotipo-wordbox" width="300">
+                  <h1 class="hero-title" >Somos <br>Transformación Digital</h1>
+              </div>
+              <div class="menu is-active">
+                    <div class="first-services">
+                        <div class="avs-services">
+                              <a class="avs-services-text"href="photo.html">Fotografía</a>
+                        </div>
+                        <div class="avs-services">
+                              <a class="avs-services-text"href="video.html">Video</a>
+                        </div>
+                        <div class="avs-services">
+                              <a class="avs-services-text"href="diseno.html">Diseño</a>
+                        </div>
+                    </div>
+                    <div class="second-services">
+                        <div class="business-services">
+                              <a class="business-services-text"href="dev-web.html">Desarrollo Web</a>
+                        </div>
+                        <div class="business-services">
+                              <a class="business-services-text"href="model-business.html">Modelo de Negocio</a>
+                        </div>
+                    </div>
+                    <div class="third-services">
+                        <div class="advisory-services">
+                              <a class="advisory-services-text"href="#form">Asesoria Gratuita</a>
+                        </div>
+                    </div>
+              </div>
+              <figure class="social-media">
+                    <a href="contact.html"><img src="images/facebook-logotipo-white.svg" alt="Logotipo-facebook" width="90"></a>
+                    <p class="copyright">Wordbox Studios, Copyright 2020 © Todos los derechos reservados</p>
+              </figure>
+          </section>
+      </main>
+      <section class="photo" >
+          <h1 class="photo-title" >Fotografía</h1>
+          <p class="photo-description" >La sonrisa es el espacio que hay entre foto y foto. <br>
+          Disfrutamos hacerte reír, mientras potenciamos el <br>
+          contenido de tu marca desde la fotografía.</p>
+          <a class="photo-cta" href="photo.html">Ver más</a>
+      </section>
+      <section class="video" >
+          <h1 class="video-title" >Vídeo</h1>
+          <video class="video-bg" autoplay muted loop>
+                  <source src="video/reel_2019.mp4" type="video/mp4"/>
+          </video>
+          <p class="video-description" >24 fotogramas por segundo nos ayudan a contar <br>
+             historias que ayudarán a impulsar tu marca llevando <br>
+            un mensaje óptimo y cautivador.</p>
+          <a class="video-cta" href="video.html">Ver más</a>
+      </section>
+      <section class="diseno" >
+          <h1 class="diseno-title" >Diseño</h1>
+          <p class="diseno-description" >La mezcla perfecta entre el branding de tu marca, <br>
+            el minimalismo pertinente y la comunicación efectiva <br>
+            para fortalecer tu marca.</p>
+          <a class="diseno-cta" href="diseno.html">Ver más</a>
+      </section>
+      <section class="contact" id="form">
+        <div class="contact-container">
+              <h1 class="contact-title" >Zona <br>Contacto </h1>
+              <form class="contact-info" action="index.html" method="post">
+                <div class="form-limits">
+                    <div class="block">
+                        <input class="field" type="text" name="name" placeholder="Nombre">
+                    </div>
+                    <div class="block">
+                        <input class="field" type="email" name="correo" placeholder="Correo">
+                    </div>
+                    <div class="block">
+                        <input class="field" type="text" name="asunto" placeholder="Asunto">
+                    </div>
+                    <div class="block-message-area">
+                        <textarea class="field-message" type="text" name="message" placeholder="Mensaje"></textarea>
+                    </div>
+                    <div class="block-submit">
+                        <input class="field-btn" type="submit" name="Enviar" value="Enviar">
+                    </div>
+                </div>
+              </form>
+        </div>
+      </section>
+      <script>
+            const ipad = window.matchMedia('screen and (max-width: 767px)')
+            const menu = document.querySelector('.menu');
+            const burgerButton = document.querySelector('#burger-menu');
 
-    <head>
+            ipad.addListener(validation)
 
-       <!--
-	Artistas by JUANES SÁNCHEZ
-	juanessanchez.com | @juanespictures
-	Free for personal and commercial use under the CCA 3.0 license
-	-->
+            function validation(event){
+              if (event.matches){
+                burgerButton.addEventListener('click', hideShow)
+              } else {
+                burgerButton.removeEventListener('click', hideShow)
+              }
+            }
+            validation(ipad);
 
-        <link rel="icon" href="img/favicon-002.png">
-
-        <meta charset=UTF-8> <title>"Wordbox - Studios"</title> <meta property=og:title content="Wordbox - Studios"/> <meta property=og:description content="Wordbox - Studios"/> <meta property=og:url content=http://worboxstudios.com/ /> <meta property=og:type content=music.listens /> <meta name=viewport content="width=device-width,user-scalable=no">
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111504727-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-111504727-1');
-</script>
-
-        <link href="css/main.css" rel="stylesheet"></head>
-
-    <body> <header class=headerLanding> <figure class=logoLanding> <img src=img/logoLanding.png alt=""> </figure> <nav class=navLanding>
-
-        <a href=https://www.youtube.com/channel/UCcME5949gRagPywxltVTjhQ target=_blank class=btnLanding>YouTube</a>
-
-        <a href=https://wa.me/573174445293 target=_blank class=btnLanding> Contacto </a> </nav> </header>
-
-<section class="contentVideo"> <article class="video"> <iframe id="player" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/UOBrwW7rmVg?rel=0&amp;showinfo=1;controls=0&amp"></iframe> </article> 
-
-        <script type="text/javascript" src="bundle.js"></script>
-	    
-	    
-    </body>
-
+            function hideShow() {
+              if (menu.classList.contains('is-active')){
+                menu.classList.remove('is-active');
+              } else {
+                menu.classList.add('is-active');
+              }
+            }
+      </script>
+  </body>
+</html>
